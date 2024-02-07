@@ -12,4 +12,7 @@ while True:
         print("Congratulations! You guessed the right number.")
         break
     else:
-        print("Sorry! Try again. ")
+        if guess < number:
+            print("Too low! Try again. ")
+        else:
+            print("Too high! Try again. ")
