@@ -14,8 +14,13 @@ while num_guesses > 0:
         break
     else:
         num_guesses -= 1
-        print(f"Sorry! Try again. You have {num_guesses} guesses left. ")
+        if guess < number:
+            print(f"Too low! Try again. You have {num_guesses} guesses left.")
+        else:
+            print(f"Too high! Try again. You have {num_guesses} guesses left.")
+
         if num_guesses == 0:
             print(f"Sorry! The number was {number}.")
 
 
+        
